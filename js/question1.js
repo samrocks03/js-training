@@ -1,9 +1,15 @@
 /* 1. What happens when you add a for loop/while loop/switch case block inside a function and use return instead of break?
 Do statements after the loop run? What is the return value? 
- Can we pass a return value from within a loop? ==> 
-    Yes
+==>   The statements after the loop will not run and the return 
+      value will be the value that is returned from the loop.
+
+
+ Can we pass a return value from within a loop?
+==>     Yes
 
     Can you return from inside an if block? What impact does that have?
+==>   Yes
+        The further code will not be executed after return
 */
 
 
@@ -26,4 +32,4 @@ function print() {
     console.log("Something"); //when we use return in the loop this will not be printed
   }
   
-  console.log("Value returned is : ",print());
+  console.log("Value returned at the last is : ",print());
