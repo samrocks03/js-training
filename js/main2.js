@@ -50,4 +50,3 @@ console.log("Sorted Array:", array);
 const mappedArray = array.map(num => num * 2);
 console.log("Mapped Array (Doubled each element):", mappedArray);
 
-// Display results
