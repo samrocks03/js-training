@@ -1,5 +1,5 @@
 // Closures:
-
+/*
 function myFunc(power){
     return function(number){
         return number ** power;
@@ -24,3 +24,36 @@ console.log(cube(2)); // Output: 8
 
 // Before learning closures: Why this works?!
 // After learning closures: Okay! so this is how it works!
+*/
+
+const myFunc = (power) => {
+    return (number) => number ** power; 
+}
+
+const square = myFunc(2);
+console.log(square(2)); // Output: 4
+
+const cube = myFunc(3);
+console.log(cube(2)); // Output: 8
+
+
+
+function func(){
+    let c = 0;
+    return function(){
+        if(c < 1){
+            console.log("Hello, u called me?");
+            c++;
+        }else{
+            console.log("Maza call aadhich zaalay");
+        }
+    }
+}
+const a = func();
+a(); // Output: Hello, u called me?
+
+a();
+
+const b = func();
+b();
+b();
