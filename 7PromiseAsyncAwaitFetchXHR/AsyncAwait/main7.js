@@ -30,3 +30,7 @@ const getP = async () => {
 getP()
     .then(data => console.log(data))
     .catch(error => console.log("in catch: ", error))
+
+
+// async always returns a promise 
+// await: keyword which can be used only inside of async function
