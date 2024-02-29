@@ -32,7 +32,7 @@ async function handlePromise() {
 
 
     // in async await block
-    // the code is going to wait 10 seconds, then only it will return the 
+    // the code is going to wait 7 seconds, then only it will return the 
 }
 handlePromise();
 
