@@ -1,10 +1,13 @@
 let users;
 
 const getUsers = async () => {
+    console.log("outside try")
     try {
+        console.log("inside try")
         const response = await fetch("https://dummyjson.com/users");
         const responseBody = await response.json();
         users = responseBody.users;
+        console.log(users)
         renderTable(users);
     } catch (error) {
         console.error("Error fetching users:", error);
